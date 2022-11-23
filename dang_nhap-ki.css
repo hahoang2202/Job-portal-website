@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #33FFCC;
+    transition: 1s;
+}
+.container-xxl bg-white p-0 .login{
+    position: relative;
+    background: #fff;
+    padding: 20px 25px;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.container-xxl bg-white p-0 .login h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login .google{
+    width: 80%;
+    background: #fa5647;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login .google:hover{
+    background: #cf2818;
+}
+.login .google .fa-brands{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4285F4;
+    border-radius: 8px;
+    font-size: 19px;
+    transition: 0.5s;
+}
+.login .google:hover .fa-brands{
+    background: #cf2818;
+    color: #fff;
+}
+.google p{
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: 0.5s;
+    position: relative;
+}
+.google p::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    left: -5%;
+    top: -21%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px black;
+    transition: all 0.5s;
+    display: none;
+}
+.google:hover p::after{
+    display: block;
+}
+.login .login_or{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login .facebook{
+    width: 80%;
+    background: #4285F4;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login .facebook:hover{
+    background: #205ab7;
+}
+.login .facebook .fa-facebook-f{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4285F4;
+    border-radius: 8px;
+    font-size: 19px;
+    transition: 0.5s;
+}
+.login .facebook:hover .fa-facebook-f{
+    background: #205ab7;
+    color: #fff;
+}
+.facebook p{
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: 0.5s;
+    position: relative;
+}
+.facebook p::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    left: 0%;
+    top: -21%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px black;
+    transition: all 0.5s;
+    display: none;
+}
+.facebook:hover p::after{
+    display: block;
+}
+.login span{
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2;
+    color: rgb(97, 97, 97);
+}
+.login .login_or::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgb(175, 175, 175);
+    top: 50%;
+    left: 0;
+}
+.login .inputBox{
+    position: relative;
+    width: 100%;
+}
+.login .inputBox input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.login .inputBox input:focus{
+    border: 2px solid #333;
+}
+.inputButton{
+    position: relative;
+    width: 100%;
+}
+.inputButton input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #33FFCC;
+    cursor: pointer;
+    transition: 1s;
+}
+.inputButton input:hover{
+    opacity: 0.8;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.colors{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 1%;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    border-radius: 15px;
+}
+.colors span{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: var(--clr);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colors span.active{
+    border: 3px solid #333;
+    transform: scale(1.25);
+}
